@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Iteris - Desafio HTML e CSS</title>
+<style>
+	body {
+		background-color: #eee;
+		margin: 0;
+	}
+	#div1 {
+		height:25vh;
+		background-color: red;
+		display: flex;
+		flex-direction: row; /*comportamento padrao*/
+		align-items: center;
+		justify-content: center;
+	}
+	#div2 {
+		height:25vh;
+		background-color: orange;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	#div3 {
+		height:25vh;
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#esquerda {
+		background-color: yellow;
+		width: 12vh;
+
+	}
+	#direita {
+		background-color: green;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 12vh;
+
+	}
+	#info3 {
+		background-color:blue;
+		width: 50%
+	}
+	#info4 {
+		background-color:purple;
+		width: 50%;
+	}
+	p {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	#div4 {
+		height:25vh;
+		background-color: white;
+		display: none;
+	}
+</style>
+
+</head>
+<body>
+	<div id="div1">
+		Div 1
+	</div>
+	<div id="div2">
+		Div 2
+	</div>
+	<div id="div3">
+		<p id="esquerda">info1</p>
+		<p id="direita">info2</p>
+	</div>
+</div>
+<div id="div3">
+		<p id="info3">info3</p>
+		<p id="info4">info4</p>
+	</div>
+	<div id="div4">
+		Div 4
+	</div>
+</body>
+</html>
