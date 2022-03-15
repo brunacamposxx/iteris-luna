@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Olá mundo</title>
+	<script>
+		function clickNoBotao(){
+			alert("Obrigado por clicar!");
+		}
+		// toda vez que o usuario digitar no input de texto
+		// o valor do input sera exibido no paragrafo "p"
+		// e aparecerá "oi" no console do navegador
+		function atualizacoTexto(){
+			let input = document.getElementById("meuInput");
+			let p = document.getElementById("paragrafo");
+
+			p.textContent = input.value;
+			console.log("oi");
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<h1>Título</h1>
+		<h2>Título</h2>
+		<h3>Título</h3>
+		<h4>Título</h4>
+		<h5>Título</h5>
+		<p id="paragrafo">Qualquer texto</p>
+		<span>Texto isolado!</span>
+	</div>
+	<img src="css_is_awesome.png" />
+	<a href="https://www.google.com/">Link para o google!</a>
+	
+	<div>
+		<input id="meuInput" type="text" oninput="atualizacoTexto()"/>
+		<select>
+			<options> Opção 1 </options>
+			<options> Opção 2 </options>
+			<options> Opção 3 </options>
+			</select>
+		<button onclick="clickNoBotao()">Botão</button>
+	</div>
+</body>
+</html>
